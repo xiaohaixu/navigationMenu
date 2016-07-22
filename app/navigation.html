@@ -16,6 +16,9 @@
         <a href="#" class="contact" ng-click="active='contact'">Contact</a>
     </nav>
 
+    <!-- ng-show will show an element if the value in the quotes is truthful,
+     while ng-hide does the opposite. Because the active variable is not set
+     initially, this will cause the first paragraph to be visible. -->
     <p ng-hide="active">Please click a menu item</p>
     <p ng-show="active">You chose <b>{{active}}</b></p>
 </body>
